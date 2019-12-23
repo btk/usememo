@@ -31,6 +31,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
+    "push": "gatsby build && aws s3 rm s3://usememo.com --recursive && aws s3 cp public s3://usememo.com --recursive",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"

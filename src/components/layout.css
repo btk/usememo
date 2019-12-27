@@ -59,7 +59,7 @@ h1 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 3.2rem;
-  font-family: 'Rubik', serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   font-weight: 500;
@@ -81,7 +81,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.2rem;
-  font-family: 'Rubik', serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.25;
   margin-bottom: 1.5rem;
   font-weight: 500;
@@ -267,14 +267,16 @@ svg #wheel {
 .superpowers {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  width: calc(100% / 3 - 15px);
   padding: 15px 0px;
 }
 
 .superpower {
-  width: calc(100% / 3 - 15px);
   border-bottom: 2px solid #eee;
   color: #8798A6;
   cursor: pointer;
+  margin-bottom: 27px;
 }
 
 .superpower:hover, .superpower.active {
@@ -286,21 +288,133 @@ svg #wheel {
   margin-bottom: 15px;
 }
 
-.superpowerScreenShot {
-  margin-top: 20px;
+.superpowerCarrier {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
-.superpowerScreenShot img {
-  width: 100%;
-  border-radius: 8px;
-  overflow:hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) -2px 0px 16px -4px;
-  padding: 0px;
-  margin: 0px;
+.superpowerScreenShot {
+  width: calc(100% - 320px);
+}
+
+.superpowerScreenShot .gatsby-image-wrapper {
+  max-width: 820px;
+  box-shadow: 0px 0px 10px 2px rgba(87,87,87,0.23);
+}
+
+.buttonCarrier {
+  display: flex;
+  flex-direction: row;
+}
+
+.opensource {
+  max-width: 550px;
+  margin: auto;
+}
+
+.opensource li {
+  margin-bottom: 10px;
+  color: #242938;
+}
+
+.opensource a {
+  box-shadow: inset 0 -17px 0 -12px #a7eefe;
+  text-decoration: none;
+  color: #242938;
+  font-weight: 500;
+  transition: 200ms all;
+}
+
+.opensource a:hover {
+  box-shadow: inset 0 -70px 0 -12px #a7eefe;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 20%;
+}
+
+
+@media only screen and (max-width: 930px) {
+  .superpowerCarrier {
+    flex-direction: column-reverse;
+  }
+  .superpowerScreenShot {
+    width: auto;
+  }
+  .superpowers {
+    margin-top: 10px;
+    width: auto;
+  }
+  .screenInner {
+    flex-direction: column;
+  }
+
+  .screenInner .mottoCarrier {
+    position: relative;
+    z-index: 99;
+  }
+
+  .imagesCarrier {
+    width: calc(100% - 20px);
+    position: absolute;
+    top: 0px;
+    opacity: 0.2;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .mottoCarrier {
+    width: 100%;
+  }
+  .mottoCarrier .subtext {
+    font-size: 1em;
+  }
+
+  .imagesCarrier {
+    opacity: 0.1;
+    top: 10%;
+  }
+  .mottoCarrier h1 {
+    font-size: 2.6em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
+
+  .mottoCarrier .subtext {
+    font-size: 0.95em;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  .mottoCarrier h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  .buttonCarrier {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 15px;
   }
 }

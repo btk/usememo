@@ -52,10 +52,6 @@ class IndexPage extends Component {
         </div>
 
 
-        <br/>
-        <br/>
-        <br/>
-
         <h2>Every paragraph<br/>
             full of <span>super powers</span>.</h2>
 
@@ -76,9 +72,6 @@ class IndexPage extends Component {
         </div>
 
 
-        <br/>
-        <br/>
-        <br/>
 
         <h2>Contribute to Memo,<br/>
             it is <span>open source</span>.</h2>

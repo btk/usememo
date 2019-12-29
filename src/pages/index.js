@@ -31,9 +31,11 @@ class IndexPage extends Component {
                   </div>
                 </a>
 
-                <div className="button passive">
-                  <span>Get on MacOS</span>
-                </div>
+                <Link to={`/download/`}>
+                  <div className="button passive">
+                    <span>Download</span>
+                  </div>
+                </Link>
               </div>
             </div>
             <Narwhal/>

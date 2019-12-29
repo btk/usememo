@@ -27,6 +27,13 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  let titleTemplate = `%s | ${site.siteMetadata.title}`;
+
+  if(title == "home"){
+    title = "Memo App - Take Smarter notes with GitHub Gists"
+    titleTemplate = `%s`;
+  }
+
   return (
     <Helmet
       htmlAttributes={{

@@ -18,7 +18,7 @@ class IndexPage extends Component {
 
   componentDidMount(){
     if(typeof window !== "undefined"){
-      //window.location.href = this.getPlatformLink();
+      window.location.href = this.getPlatformLink();
     }
   }
 
@@ -68,7 +68,7 @@ class IndexPage extends Component {
         </div>
 
         <SEO
-          description={`testing desc`}
+          description={`You can download note taking app Memo for your desktop devices.`}
           lang={`en`}
           title={`Download`}
         />

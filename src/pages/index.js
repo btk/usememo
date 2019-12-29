@@ -90,6 +90,12 @@ class IndexPage extends Component {
         <div className="footer">
           2020 GNU GPLv3 License &middot; Memo App
         </div>
+
+        <SEO
+          description={`Memo allows you to take smarter notes with GitHub Gists, learn how you can take better notes.`}
+          lang={`en`}
+          title={"home"}
+        />
       </Layout>
     )
   }

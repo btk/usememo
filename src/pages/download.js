@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 
 
 const windowsLink = "https://usememo.com/MemoSetup.exe";
+const linuxLink = "https://usememo.com/MemoSetup.AppImage";
 const macosLink = "https://usememo.com/MemoSetup.dmg";
 
 class IndexPage extends Component {
@@ -26,6 +27,8 @@ class IndexPage extends Component {
     if(typeof window !== "undefined"){
       if(window.navigator.platform.toLowerCase() == "win32"){
         return windowsLink;
+      }else if(window.navigator.platform.toLowerCase().includes("linux")){
+        return linuxLink;
       }else{
         return macosLink;
       }
@@ -38,6 +41,16 @@ class IndexPage extends Component {
         return macosLink;
       }else{
         return windowsLink;
+      }
+    }
+  }
+
+  getOtherPlatformText(){
+    if(typeof window !== "undefined"){
+      if(window.navigator.platform.toLowerCase() == "win32"){
+        return "MacOS";
+      }else{
+        return "Windows";
       }
     }
   }
@@ -58,7 +71,7 @@ class IndexPage extends Component {
         <div className="opensource">
           <p>Please wait for a while, download should start any second. If it didn't please <a href={this.getPlatformLink()}>click here!</a></p>
           <ul>
-            <li>If you were looking for the Windows app please <a href={this.getOtherPlatformLink()}>click here!</a></li>
+            <li>If you were looking for the {this.getOtherPlatformText()} app please <a href={this.getOtherPlatformLink()}>click here!</a></li>
             <li>Did you face a bug, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue to tell us</a>, or make a pull request that fixes it.</li>
           </ul>
         </div>

@@ -81,11 +81,11 @@ class IndexPage extends Component {
             it is <span>open source</span>.</h2>
 
         <div className="opensource">
-          <p>Enjoy the crowdsourced UX capabilities of <a href="https://github.com/btk/memo">open source</a> note taking app memo.</p>
+          <p>Enjoy the crowdsourced UX capabilities of <a href="https://github.com/btk/memo" target="_blank">open source</a> note taking app memo.</p>
           <ul>
-            <li>Did you face a bug, <a href="">file an issue to tell us</a>, or make a pull request that fixes it.</li>
-            <li>Do you think Memo should have "that" feature, <a href="">file an issue</a>, or add it yourself.</li>
-            <li>Would you like to make an addon for Memo? <a href="">Read this tutorial</a> and make a pull request.</li>
+            <li>Did you face a bug, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue to tell us</a>, or make a pull request that fixes it.</li>
+            <li>Do you think Memo should have "that" feature, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue</a>, or add it yourself.</li>
+            <li>Would you like to make an addon for Memo? <a href="https://github.com/btk/memo#contributing" target="_blank">Read this tutorial</a> and make a pull request.</li>
           </ul>
         </div>
 

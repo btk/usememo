@@ -16,14 +16,21 @@ import Img from "gatsby-image"
 const Image = ({power}) => {
   const data = useStaticQuery(graphql`
     query {
-      dark: file(relativePath: { eq: "dark.png" }) {
+      one: file(relativePath: { eq: "light.png" }) {
         childImageSharp {
           fluid(maxWidth: 820, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      light: file(relativePath: { eq: "light.png" }) {
+      two: file(relativePath: { eq: "2.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 820, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      three: file(relativePath: { eq: "3.png" }) {
         childImageSharp {
           fluid(maxWidth: 820, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -36,13 +43,13 @@ const Image = ({power}) => {
   return (
     <div className="superpowerScreenShot">
       {power === 1 &&
-        <Img fluid={data.light.childImageSharp.fluid} />
+        <Img fluid={data.one.childImageSharp.fluid} />
       }
       {power === 2 &&
-        <Img fluid={data.dark.childImageSharp.fluid} />
+        <Img fluid={data.two.childImageSharp.fluid} />
       }
       {power === 3 &&
-        <Img fluid={data.light.childImageSharp.fluid} />
+        <Img fluid={data.three.childImageSharp.fluid} />
       }
     </div>
   )

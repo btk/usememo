@@ -367,6 +367,13 @@ svg #wheel {
   opacity: 1;
 }
 
+.producthunt {
+  margin: auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 200px;
+}
+
 @media only screen and (max-width: 930px) {
   .superpowerCarrier {
     flex-direction: column-reverse;

@@ -18,7 +18,7 @@ class IndexPage extends Component {
         <div className="screen">
           <div className="screenInner">
             <div className="mottoCarrier">
-              <img src={require("./logo.svg")} className="logo"/>
+              <img src={require("./logo.svg")} className="logo" alt="logo"/>
               <h1>Take <br/>
                   Smarter notes <br/>
                   with <span>GitHub Gists</span>.</h1>
@@ -40,6 +40,8 @@ class IndexPage extends Component {
             </div>
             <Narwhal/>
           </div>
+
+
 
           <div style={{width: "100%"}}>
             <svg width="32px" viewBox="0 0 247 390" className="wheelCarrier">
@@ -86,6 +88,11 @@ class IndexPage extends Component {
             <li>Would you like to make an addon for Memo? <a href="">Read this tutorial</a> and make a pull request.</li>
           </ul>
         </div>
+
+
+        <div className="producthunt" dangerouslySetInnerHTML={{__html: `
+          <a href="https://www.producthunt.com/posts/memo-plain-smart-notes?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-memo-plain-smart-notes" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=179543&theme=light" alt="Memo - Plain & Smart Notes - Take smarter notes with GitHub Gists, anywhere. | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
+        `}}></div>
 
         <div className="footer">
           2020 GNU GPLv3 License &middot; Memo App

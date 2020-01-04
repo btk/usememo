@@ -27,7 +27,7 @@ class IndexPage extends Component {
               <div className="buttonCarrier">
                 <a href="https://app.usememo.com/">
                   <div className="button active">
-                    <span>Use on Browser</span>
+                    <span>Use in Browser</span>
                   </div>
                 </a>
 

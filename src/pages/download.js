@@ -6,6 +6,7 @@ import Narwhal from "../components/narwhal"
 import SS from "../components/ss"
 import Superpower from "../components/superpower"
 import SEO from "../components/seo"
+import Footer from '../components/footer'
 
 
 const windowsLink = "https://usememo.com/MemoSetup.exe";
@@ -76,9 +77,8 @@ class IndexPage extends Component {
           </ul>
         </div>
 
-        <div className="footer">
-          2020 GNU GPLv3 License &middot; Memo App
-        </div>
+        <Footer/>
+
 
         <SEO
           description={`You can download note taking app Memo for your desktop devices.`}

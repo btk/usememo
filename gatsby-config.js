@@ -38,6 +38,12 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-138987685-1"
+      }
     }
   ],
 }

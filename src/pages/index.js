@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Narwhal from "../components/narwhal"
 import SS from "../components/ss"
 import Superpower from "../components/superpower"
+import Footer from '../components/footer'
 import SEO from "../components/seo"
 
 class IndexPage extends Component {
@@ -84,9 +85,43 @@ class IndexPage extends Component {
           <p>Enjoy the crowdsourced UX capabilities of <a href="https://github.com/btk/memo" target="_blank">open source</a> note taking app memo.</p>
           <ul>
             <li>Did you face a bug, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue to tell us</a>, or make a pull request that fixes it.</li>
-            <li>Do you think Memo should have "that" feature, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue</a>, or add it yourself.</li>
+            <li>Do you think Memo should have "that" feature, <a href="https://memo.kampsite.co" target="_blank">add a feature request</a>, or add it yourself.</li>
             <li>Would you like to make an addon for Memo? <a href="https://github.com/btk/memo#contributing" target="_blank">Read this tutorial</a> and make a pull request.</li>
           </ul>
+        </div>
+
+
+        <h2><span>Team work</span> makes<br/>
+            Memo work!</h2>
+
+        <div className="opensource" style={{maxWidth: 700}}>
+          <p>We are doing as much as we can to make Memo better than it is, and maintain its future open source community, making sure everyone using Memo is included.</p>
+          <div className="team">
+            <div className="person">
+              <img src="https://avatars1.githubusercontent.com/u/5216601" alt="burak tokak" style={{opacity: 0.9}}/>
+              <div>
+                <strong>Burak Tokak</strong><br/>
+                <span>Co-Maker / Developer</span>
+              </div>
+              <div className="socials">
+                <a href="https://github.com/btk" target="_blank"><img src={require("./github.svg")} alt={"social-github"}/></a>
+                <a href="https://twitter.com/BurakTokak" target="_blank"><img src={require("./twitter.svg")} alt={"social-twitter"}/></a>
+              </div>
+            </div>
+
+            <div className="person">
+              <img src="https://avatars0.githubusercontent.com/u/40620800" alt="hannah milan"/>
+              <div>
+                <strong>Hannah Milan</strong><br/>
+                <span>Co-Maker / Designer</span>
+              </div>
+              <div className="socials">
+                <a href="https://github.com/hannahhhmilan" target="_blank"><img src={require("./github.svg")} alt={"social-github"}/></a>
+                <a href="https://twitter.com/hannahmilann" target="_blank"><img src={require("./twitter.svg")} alt={"social-twitter"}/></a>
+              </div>
+            </div>
+          </div>
+          <p style={{textAlign: "center"}}>Oh, would you like to join us? <a href="mailto:info@usememo.com">Contact us.</a></p>
         </div>
 
 
@@ -94,9 +129,7 @@ class IndexPage extends Component {
           <a href="https://www.producthunt.com/posts/memo-plain-smart-notes?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-memo-plain-smart-notes" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=179543&theme=light" alt="Memo - Plain & Smart Notes - Take smarter notes with GitHub Gists, anywhere. | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
         `}}></div>
 
-        <div className="footer">
-          2020 GNU GPLv3 License &middot; Memo App
-        </div>
+        <Footer/>
 
         <SEO
           description={`Memo allows you to take smarter notes with GitHub Gists, learn how you can take better notes.`}

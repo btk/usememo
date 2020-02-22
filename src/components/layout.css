@@ -156,6 +156,10 @@ p span.underline {
   padding: 0px 1.0875rem 1.45rem;
 }
 
+strong {
+  font-weight: 500;
+}
+
 .screen {
   height: 100vh;
   display: flex;
@@ -324,6 +328,11 @@ svg #wheel {
   margin: auto;
 }
 
+.privacypolicy {
+  max-width: 750px;
+  margin: auto;
+}
+
 .opensource li {
   margin-bottom: 10px;
   color: #242938;
@@ -372,6 +381,59 @@ svg #wheel {
   margin-top: 50px;
   height: 50px;
   width: 200px;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.team .person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.team .person span {
+  font-size: 16px;
+}
+
+.team .person .socials img {
+  border-radius: 0px;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.team .person .socials a {
+  background: none;
+  box-shadow: none;
+}
+
+.team .person .socials img:hover {
+  opacity: 0.9;
+}
+
+
+.footer .socials img {
+  border-radius: 0px;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.footer .socials a {
+  background: none;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 930px) {
@@ -452,5 +514,10 @@ svg #wheel {
   .button {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  .team .person img {
+    width: 50px;
+    height: 50px;
   }
 }

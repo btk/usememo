@@ -117,7 +117,7 @@ class IndexPage extends Component {
               </div>
               <div className="socials">
                 <a href="https://github.com/hannahhhmilan" target="_blank"><img src={require("./github.svg")} alt={"social-github"}/></a>
-                <a href="https://twitter.com/hannahmilann" target="_blank"><img src={require("./twitter.svg")} alt={"social-twitter"}/></a>
+                <a href="https://twitter.com/humbleuidesigns" target="_blank"><img src={require("./twitter.svg")} alt={"social-twitter"}/></a>
               </div>
             </div>
           </div>

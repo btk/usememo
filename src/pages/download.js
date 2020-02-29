@@ -74,6 +74,7 @@ class IndexPage extends Component {
           <ul>
             <li>If you were looking for the {this.getOtherPlatformText()} app please <a href={this.getOtherPlatformLink()}>click here!</a></li>
             <li>Did you face a bug, <a href="https://github.com/btk/memo/issues" target="_blank">file an issue to tell us</a>, or make a pull request that fixes it.</li>
+            <li>Do you think Memo should have "that" feature, <a href="https://memo.kampsite.co" target="_blank">add a feature request on Kampsite</a>.</li>
           </ul>
         </div>
 
